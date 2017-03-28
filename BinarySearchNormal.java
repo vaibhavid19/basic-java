@@ -54,7 +54,7 @@ public class BinarySearchNormal {
 		return false;
 	}
 	
-	public static boolean binarySearchIterativeForString(String sentence, String word){
+	public static boolean searchForString(String sentence, String word){
 		ArrayList<String> wordArrayList = new ArrayList<String>();
 		for(String temp : sentence.split(" ")) {
 		    wordArrayList.add(temp);
@@ -90,7 +90,7 @@ public class BinarySearchNormal {
 		System.out.println("Starting Method calls.. ");
 		binarySearchRecursive(temp, 4);
 		binarySearchIterative(temp, 53);
-		binarySearchIterativeForString(sentence, word);
+		searchForString(sentence, word);
 
 		
 	}
